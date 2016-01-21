@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "soundstreams/soundstreamsmanager.h"
+
 namespace Ui
 {
 class MainWindow;
@@ -16,8 +18,13 @@ public:
    explicit MainWindow( QWidget* pParent = 0 );
    ~MainWindow();
 
+private slots:
+   void on_btnStartStop_clicked( bool bChecked );
+
 private:
    Ui::MainWindow* _pUi;
+
+   EarsExApp::SoundStreamsManager* _pSoundStreamsMgr;
 };
 
 #endif // MAINWINDOW_H

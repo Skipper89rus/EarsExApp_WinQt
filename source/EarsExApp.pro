@@ -14,7 +14,12 @@ TEMPLATE = app
 
 SOURCES += main/main.cpp \
            main/mainwindow.cpp \
+    soundstreams/soundstreams.cpp \
+    soundstreams/soundstreamsmanager.cpp
 
 HEADERS += main/mainwindow.h \
+    soundstreams/isoundstream.h \
+    soundstreams/soundstreams.h \
+    soundstreams/soundstreamsmanager.h
 
 FORMS   += main/mainwindow.ui
